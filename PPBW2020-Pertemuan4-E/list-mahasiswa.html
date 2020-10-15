@@ -51,35 +51,25 @@
                Sedangkan href merupakan atribut daripada tag a   
         -->
         <br>
-        <table border="1" cellpadding="5">        
-            <tbody>
-                <thead>
-                    <caption>
-                        <h3>Tabel Daftar Mahasiswa Informatika</h3>
-                    </caption>
-                </thead>
+        <table border="1" cellpadding="5">
+            <caption><h3>Tabel Daftar Mahasiswa Informatika</h3></caption>
+            <thead>
                 <tr>
-                    <th>
-                        Logo Himpunan Mahasiswa <br> Informatika  
-                    </th>
-                    <th colspan="2">
-                        DAFTAR MAHASISWA
-                    </th>
-                    <th rowspan="2">
-                        DAFTAR KELAS <br> INFORMATIKA
-                    </th>
+                    <th colspan="4">DAFTAR MAHASISWA</th>
                 </tr>
-
-                <!-- ====== BAGIAN ISI TABEL ======-->
+                <tr>
+                    <th>Logo Himpunan Mahasiswa <br> Informatika</th>
+                    <th>NIM</th>
+                    <th>Nama Mahasiswa</th>
+                    <th rowspan="2">DAFTAR KELAS <br> INFORMATIKA</th>
+                </tr>
+            </thead>        
+            <tbody>
                 <tr>
                     <td rowspan="11">
                         <img src="https://sinmawa.unud.ac.id/img/admin/logo/4b62461f05164f65ed8d342e51144c8a.png" height="75px" width="80px">
                     </td>
-                    <th>NIM</th>
-                    <th>Nama Mahasiswa</th>
                 </tr>
-
-                <!-- ====== BAGIAN LIST MAHASISWA ======-->
                 <tr>
                     <td>000256001</td>
                     <td>ALEX ANDERSON FERNANDO</td>
@@ -141,17 +131,22 @@
                  digunakan untuk memberi garis pada tabel yang dibuat
                  dan cellpadding memberikan jarak di dalam box antara text dengan garis
             -->
-            <!-- =================== <table>, <th>, <tr>, <td> =================== 
+            <!-- =================== <table>, <th>, <tr>, <td>, <h3> =================== 
                  1. tag <table> adalah tag untuk membuat struktur tabel pada halaman html
-                 2. tag <th> adalah tag (table head) untuk membuat judul pada tabel
-                 3. tag <tr> merupakan tag (table row) yang digunakan untuk membuat
+                 2. tag <caption> adalah tag yang mendefinisikan keterangan tabel
+                 3. tag <thead> adalah tag yang digunakan untuk mengelompokkan konten
+                    header dalam tabel html
+                 4. tag <tbody> tag untuk mengelompokkan konten body(isi) dalam tabel html             
+                 5. tag <th> adalah tag (table head) untuk membuat judul pada tabel
+                 6. tag <tr> merupakan tag (table row) yang digunakan untuk membuat
                     baris
-                 4. tag <td> merupakan tag (table data) yang digunakan untuk memberi
+                 7. tag <td> merupakan tag (table data) yang digunakan untuk memberi
                     tulisan atau data pada tabel
-                 5. tag <colspan> tag ini digunakan untuk menyatukan satu kolom atau
+                 8. tag <colspan> tag ini digunakan untuk menyatukan satu kolom atau
                     lebih
-                 6. tag <rowspan> tag ini digunakan untuk menyatukan satu baris atau
-                    lebih 
+                 9. tag <rowspan> tag ini digunakan untuk menyatukan satu baris atau
+                    lebih
+                10. tag <h3> tag ini digunakan untuk membuat heading dengan ukuran h3
             --> 
             <br>
 
