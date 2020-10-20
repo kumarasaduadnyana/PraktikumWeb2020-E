@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- ================ DOCTYPE html =================
+     DOCTYPE html merupakan sebuah deklarasi pada 
+     html 5 untuk memberitahu browser bahwa code
+     dibawah merupakan bahasa html
+-->
+<html>
+    <!-- ==================== <html> ====================== 
+        Tag html ini untuk membuat struktur dokumen htmml
+        yang berisikan elemen elemen pada html
+    -->
+    <head>
+        <meta charset="utf-8">
+        <!-- ================ <meta> =================
+            Mendefinisikan metadata tentang dokumen HTML
+            dan charset merupakan atribut dari tag <meta> yang menspesifikasi
+            encoding karakter untuk HTML document
+        -->
+        <title>PPBW2020-Pertemuan5-E</title>
+        <link rel="stylesheet" href="./CSS/stylesheet.css" type="text/css">   
+    </head>
+    <!-- ==================== <head>, <title>, <link> =====================
+        Tag head merupakan tag untuk membuat informasi tentang 
+        dokumen dan <title> untuk membuat judul dari sebuah halaman
+        
+        Tag <link> yaitu sebuah hyperlinks dan memiliki atribut href dan rel yang menuju suatu destinasi. Karena 
+        link diatas menuju file css, sehingga akan mengubah bentuk dari html dan memang
+        biasanya diletakkan di head untuk memberi style pada html.
+    -->
+    <body>
+        <div class="head">
+            <!-- ========================= <div> =======================
+                Tag <div> dengan atribut class digunakan untuk membuat sebuah class untuk mengelompokkan
+                beberapa tag menjadi satu grup, misalnya list pada menu di atas website    
+                dan nama class yang diberikan bebas, agar mempermudah saat akan dipercantik dengan 
+                CSS
+
+                Dan div class ini bisa digunakan dalam bentuk Inheritence (Pewarisan)/Nested
+            -->
+            <div class="header-logo">
+                <h1>Welcome</h1>
+                <!-- ================= <h1> =======================
+                    Tag <h1> digunakan untuk membuat heading text 1 (judul)   
+                -->
+            </div>
+            <div class="header-list">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact</li>
+                </ul>
+                <!-- =================== <ul>, <li> =================== 
+                    1. tag <ul> adalah deklarasi untuk membuat list yang tidak
+                    terurut 
+                    2. tag <li> untuk membuat isi dari daftar yang akan dibuat   
+                -->    
+            </div>   
+        </div>    
+        <div class="content">
+            <div class="Judul Content">
+                <h3 class="section-title">Pendaftaran Mahasiwa</h3>
+                <!-- ================= <h3> =======================
+                    Tag <h3> digunakan untuk membuat heading text 3 (judul)   
+                -->
+            </div>
+            <div class="box-pendaftaran">
+                <p class="judul-box">Masukan Data Diri</p>
+                <!-- ================= <p> ================== 
+                    <p> tag yang digunakan untuk membuat struktur paragaf   
+                -->
+                <form >
+                    <!-- ================= <form> ==================
+                        tag <form> elemen yang digunakan untuk membuat formulir HTML untuk input
+                        pengguna    
+                    -->
+                    <label class="container1">Nama</label><br>
+                    <!-- ================= <label> ==================
+                        tag <label> elemen yang digunakan untuk mendefinisiikan label/ nama
+                        untuk setiap elemen formulir    
+                    -->
+                    <input type="text" name="firstname">
+                    <!-- ================= <input> ==================
+                        tag <input> elemen yang digunakan untuk  mendefinisikan bidang input satu baris
+                        untuk input sebuah teks  dengan atribut type yang menyesuaikan dengan input   
+                    -->
+                    <br>
+                    <br>
+                    <!-- ================= <br> ==================
+                        tag <input> elemen yang digunakan untuk  memberi jarak   
+                    -->
+                    <label class="container1">Username</label><br>
+                    <input type="text" name="lastname">
+                    <br>
+                    <br>
+                    <label class="container1">Password</label><br>
+                    <input type="password" name="password">
+                    <!-- ================= <input> ==================
+                        tag <input> elemen dengan atribut password yang digunakan untuk mendefinisikan bidang input satu baris
+                        untuk input sebuah password, sehingga katika user menginputkan teks, akan berubah manjadi titik titik kecil
+                        layaknya password hide     
+                    -->
+                    <br>
+                    <br>
+                    <div class="pilihan">
+                        <div class="gender">
+                            <label class="container2">Jenis Kelamin:</label><br>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <!-- ================= <input> ==================
+                                tag <input> elemen dengan taribut type radio yang digunakan untuk mendefiniskan sebuah
+                                radio button   , dan dapat dipilih.  
+                            -->
+                            <label class="container2">Pria</label><br>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label class="container2">Perempuan</label>
+                        </div>
+                        <div class="hobby">
+                            <label class="container2">Hobby:</label><br>
+                            <input type="checkbox" id="codding" name="hobby">
+                            <!-- ================= <input> ==================
+                                tag <input> elemen dengan atribut type checkbox yang digunakan untuk mendefinisikan sebuah
+                                checkbox, dan dapat dipilih.    
+                            -->
+                            <label class="container2">Coding</label><br>
+                            <input type="checkbox" id="codding" name="hobby">
+                            <label class="container2">Design</label><br>
+                            <input type="checkbox" id="codding" name="hobby">
+                            <label class="container2">Reading</label>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <label class="container3">Negara</label><br>
+                        <select name="negara" class="container3"id="negara">
+                            <!-- ================= <select> ==================
+                                tag <input> elemen yang digunakan untuk  mendefinisikan sebauh drop down list   
+                            -->
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Australia">Australia</option>
+                            <option value="United State">United State</option>
+                            <!-- ================= <input> ==================
+                                tag <option> elemen yang digunakan untuk  mendefinisikan pilihan yang bisa dipilih
+                                pada drop down  
+                            -->
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                    <label class="komentar">Komentar</label><br>
+                    <textarea id="text-area" name="text-area">Tulis Komentar Anda</textarea>
+                    <!-- ================= <textarea> ==================
+                        tag <textarea> elemen yang digunakan untuk  mendefinisikan multi line input field
+                        artinya area dengan banyak baris sehingga bisa menuliskan sebuah kalimar, alamat,
+                        atau komentar  
+                    -->
+                    <br>
+                    <br>
+                    <button type="button" class="submit">Submit</button>
+                    <!-- ================= <button> ==================
+                        tag <button> elemen yang digunakan untuk  mendefinisikan tombol yang bisa di click  
+                    -->
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
