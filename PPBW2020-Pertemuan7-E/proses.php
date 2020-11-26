@@ -23,7 +23,7 @@
       $nilai="Selamat Anda Lulus Dengan Peringkat C";
       
    }else{
-      $nilai="Mohon maaf anda belum beruntung D";
+      $nilai="Mohon Maaf Anda Belum Beruntung Dengan Peringkat D";
    }
 
    echo "
